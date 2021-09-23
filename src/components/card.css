@@ -1,0 +1,104 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
+.logoContainer {
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  background: var(--color-white);
+  position: absolute;
+  z-index: 1;
+}
+
+.logoPng {
+  width: auto;
+  height: 16rem;
+  z-index: 2;
+  transition: all 0.5s ease-out;
+}
+
+.card {
+  min-height: 80vh;
+  width: 35rem;
+  background: var(--color-dark);
+  box-shadow: 0px 14px 20px -4px rgba(0, 0, 0, 0.49);
+  border-radius: 1.75rem;
+  padding: 0 5rem;
+  transform-style: preserve-3d;
+}
+
+.info h1 {
+  font-size: 3rem;
+  font-family: var(--font-title);
+  color: var(--color-white);
+  transition: all 0.5s ease-out;
+  text-align: center;
+}
+
+.info h3 {
+  font-size: 1.3rem;
+  padding: 2rem 0;
+  color: var(--color-white);
+  text-align: center;
+}
+
+.perks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.perks button {
+  margin-top: 1rem;
+  padding: 0.65rem;
+  width: 5.5rem;
+  background: var(--color-white);
+  border: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+  border-radius: 1.75rem;
+  font-weight: bold;
+  color: var(--color-dark);
+}
+
+.contact {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  transition: all 0.5s ease-out;
+}
+
+.contact button {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1.75rem;
+  background: var(--color-orange);
+  border: none;
+  color: var(--color-white);
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+  transition: all 0.2s ease-in-out;
+}
+.contact button:hover {
+  background: var(--color-white);
+  border: none;
+  color: var(--color-dark);
+  transform: scale(1.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 700px) {
+  .perks {
+    flex-direction: column;
+    align-items: center;
+  }
+}
